@@ -1,0 +1,41 @@
+intro mvc, compare with php and webforms
+	php: GET, POST, html, data ... in 1 file
+	webform: try to make it easy by hiding GET, POST.
+		ui and code are separated
+		However, difficult to move into WebAPI in which PUT, DELETE... are introduced
+
+	mvc = method is explicitly handled (php) 
+			+ ui and code are separated (webform)
+			
+			
+exp mvc in general
+	what does this mean by MVC?
+	different variants (asp.net mvc C->M->V, spring mvc C->M->C->V)
+
+create a new MVC project (no authentication)
+	briefly show folders (Content, fonts, Scripts, Controller, View, Model)
+
+intro Controller and View 
+	folder structure and convention
+	
+global.asax.cx --> routeconfig.cs in App_start
+	how url is mapped to controller and actions
+
+Razor engine (Template + data)
+	create new Number controller(*naming convention: always ends with Controller*)
+		Run without view to show the error
+		exp View folders
+	create an empty-without-model view for Index action (right click > add view)
+		show the newly created folder in Views
+	create a razor view to list all prime number from 01 to 50
+	exp razor syntax:
+		@{} @: @@ @**@
+	
+MasterPage _Layout.cshtml
+	exp _ViewStart.cshtml
+	
+@Html helpers
+	basic helpers
+	self-study advanced
+
+lab: build static website with controller and view
